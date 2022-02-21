@@ -1,0 +1,126 @@
+html, body, form, main {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #42554f;
+    z-index: 10;
+}
+
+/* Header --------------------------------------------------------------------------- */
+
+header {
+    position: relative;
+    background: linear-gradient(90deg, #040C0E, #132226, #525B56);
+    height: 78px;
+    width: 100%;
+    -webkit-box-shadow: 8px 5px 16px 0px rgba(0,0,0,0.84); 
+    box-shadow: 8px 5px 16px 0px rgba(0,0,0,0.84);
+    z-index: 20;
+}
+
+
+.header-button {
+    color: rgb(248, 185, 69);
+    text-shadow: 2px 1px 1px rgba(164,94,9,0.6);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border-color: transparent;
+    margin: 1px;
+    box-shadow: 0px 2px rgb(248, 185, 69);
+
+    float: right;
+    height: 75px;
+    padding: 20px;
+}
+
+.header-button:hover {
+    background-color: #525754;
+    text-decoration: underline rgb(248, 194, 94);
+    text-underline-offset: 5px;
+}
+
+/* Main ---------------------------------------------------------------------------*/
+
+main {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #42554f;
+    width: 100%;
+    z-index: 19;
+}
+
+#introduction-block {
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    width: 100%;
+    height: 380px;
+    background: linear-gradient(90deg, #040e0b, #24332f, #323836);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-shadow: 0px 0px 2px 1px #000000; 
+    box-shadow: 0px 0px 2px 1px #000000;
+    overflow-x: hidden;
+}
+
+#hi-my-name-is {
+    position: relative;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    color: white;
+    font-weight: 600;
+    top: 50px;
+    left: 20%;
+}
+
+#fullname {
+    position: relative;
+    font-size: 70px;
+    top: 75px;
+    left: 25%;
+    color: #ac7e1b;
+    font-weight: 900;
+    text-shadow: 2px -1px 2px #dbb86d;
+}
+
+#and-im-a {
+    position: relative;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    top: 95px;
+    left: 35%;
+}
+
+#software-developer {
+    position: relative;
+    font-size: 70px;
+    top: 120px;
+    left: 40%;
+    color: #ac7e1b;
+    font-weight: 900;
+    text-shadow: 2px -1px 2px #dbb86d, 0px 0px 20px #dbb86d;
+}
