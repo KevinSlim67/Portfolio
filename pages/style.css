@@ -21,15 +21,13 @@
   --font-family: "Source Sans Pro", sans-serif;
 }
 
+html {
+  font-size: calc(0.8vw + 0.3rem);
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 0.7rem;
-  }
-}
-
-@media (min-width: 700px) {
-  html {
-    font-size: calc(0.8vw + 0.3rem);
   }
 }
 
@@ -49,6 +47,7 @@ section {
 
 section h2 {
   position: relative;
+  color: black;
   font-size: 2.7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -56,6 +55,10 @@ section h2 {
   width: fit-content;
   align-self: center;
   margin-bottom: 3.5rem;
+}
+
+section h3 {
+  color: black;
 }
 
 section h2::after {
@@ -138,6 +141,17 @@ p {
   color: var(--font-300);
 }
 
+@media (max-width: 600px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  section > p {
+    width: 100%;
+  }
+
+}
+
 /* Navbar --------------------------------------------------- */
 nav {
   width: 100%;
@@ -201,6 +215,17 @@ nav a:hover {
   color: var(--primary-400);
 }
 
+@media (max-width:600px) {
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav h1 {
+    display: none;
+  }
+}
+
 /* Navbar / --------------------------------------------------- */
 
 /* Header --------------------------------------------------- */
@@ -225,6 +250,7 @@ header > div {
 header h1 {
   font-size: 4em;
   color: black;
+  text-align: center;
 }
 
 header p {
@@ -241,6 +267,16 @@ header a {
 header > div > div {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  header > div {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
 }
 
 /* Header / --------------------------------------------------- */
@@ -304,6 +340,17 @@ header > div > div {
   transform: translateX(2%);
 }
 
+@media (max-width: 600px) {
+  #about-me .split-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  #about-me .split-container > div {
+    width: 100%;
+  }
+}
+
 /* About Me / --------------------------------------------------- */
 
 /* Projects --------------------------------------------------- */
@@ -311,10 +358,10 @@ header > div > div {
   display: flex;
   width: 100%;
   gap: 6.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
-#projects > div:nth-last-of-type(even) {
+#projects > div:nth-of-type(even) {
   flex-direction: row-reverse;
 }
 
@@ -326,7 +373,7 @@ header > div > div {
   width: 50%;
 }
 
-#projects > div:nth-last-of-type(even) .img-container {
+#projects > div:nth-of-type(even) .img-container {
   justify-content: start;
 }
 
@@ -346,7 +393,7 @@ header > div > div {
   width: 50%;
 }
 
-#projects > div:nth-last-of-type(even) .text {
+#projects > div:nth-of-type(even) .text {
   align-items: flex-end;
 }
 
@@ -358,7 +405,7 @@ header > div > div {
   line-height: 1.5em;
 }
 
-#projects > div:nth-last-of-type(even) .text p {
+#projects > div:nth-of-type(even) .text p {
   text-align: end;
 }
 
@@ -368,6 +415,34 @@ header > div > div {
   padding: 1rem 2.5rem;
 }
 
+@media (max-width: 600px) {
+  #projects > div {
+    flex-direction: column-reverse !important;
+    gap: 4rem;
+  }
+
+  #projects > div:nth-last-of-type(even) .text {
+    align-items: flex-end;
+  }
+
+
+  #projects .img-container {
+    width: 100%;
+    max-height: none;
+  }
+
+  #projects .text {
+    width: 100%;
+  }
+
+  #projects > div:nth-of-type(even) .text {
+    align-items: flex-start;
+  }
+
+  #projects > div:nth-of-type(even) .text p {
+    text-align: start;
+  }
+}
 /* Projects / --------------------------------------------------- */
 
 /* Contact --------------------------------------------------- */
@@ -408,6 +483,7 @@ header > div > div {
   padding: 1rem 1.25rem;
   border-style: none;
   background-color: rgb(238, 238, 238);
+  color: black;
   font-family: var(--font-family);
 }
 
@@ -425,6 +501,16 @@ header > div > div {
   font-size: 1em;
   align-self: flex-end;
   padding: 1rem 4rem;
+}
+
+@media (max-width: 600px) {
+  #contact form {
+    width: 100%;
+  }
+
+  #contact {
+    padding-bottom: 7rem;
+  }
 }
 /* Contact / --------------------------------------------------- */
 
@@ -517,7 +603,6 @@ footer p {
 
 .project h2 {
   font-size: 1.7em;
-  color: black;
   text-align: left;
   letter-spacing: 0;
   text-transform: none;
