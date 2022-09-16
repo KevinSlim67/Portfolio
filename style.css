@@ -645,4 +645,21 @@ footer p {
   font-size: 1em;
 }
 
+@media (max-width: 600px) {
+  .project section {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project .img-container {
+    width: 100%;
+    max-height: none;
+  }
+
+  .project .skills {
+    width: 100%;
+  }
+}
+
 /* Project / --------------------------------------------------- */
